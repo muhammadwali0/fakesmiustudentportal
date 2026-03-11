@@ -85,6 +85,7 @@ http://127.0.0.1
 http-credential-exposure-demo/
 ├── index.html       # Modified SMIU login form (Unidentical for ethics)
 ├── server.py        # Flask server
+├── creds.txt        # File to store credentials
 ├── ps/
 │   ├── images/      # SMIU assets used for educational context
 │   ├── signin.css   # Stylesheet
